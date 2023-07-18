@@ -198,19 +198,13 @@ body{
 margin: 0px 45px;
 }
 
-.special{
-    align-items: center;
-    display: flex;
-}
+
 .queue{
     
     position: sticky;
     top:1px;
 }
-.exception{
-    position: sticky;
-    left :5px;
-}
+
 .queue-item{
     display: flex;
     justify-content: space-around;
@@ -247,4 +241,37 @@ margin: 0px 45px;
 .queue h1{
     text-align: center;
     margin: 20px;
+}
+
+.special img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 5px 20px;
+}
+.special{
+    display: flex;
+    overflow-x: scroll;
+    margin: 20px 40px;
+  
+    margin-top: 40px;
+}
+.special::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.special {
+    position: relative;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;   /* Firefox */
+}
+.special div{
+    position: sticky;
+    left: 0.1px;
+}
+.z{
+    position: sticky;
+    left: 0.1px;
+    z-index: 20px;
 }
